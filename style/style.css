@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 50px 100px;
+    transition: 2s;
+}
+
+header h1 {
+    width: 90px;
+    height: 50px;
+    background-image: url(../img/Adidas-Logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -999999px;
+}
+
+header h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header ul {
+    width: 600px;
+}
+
+header ul a {
+    padding: 5px 10px;
+    color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.burgerbar {
+    width: 30px;
+    display: none;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.line2,
+.line3 {
+    margin-top: 5px;
+
+}
+.item{
+    height: 300px;
+    overflow: hidden;
+}
+
+
+.owl-theme .owl-nav{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #d4d4d4!important;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    font-size: 50px!important;
+    color: #d4d4d4!important;
+}
+
+
+@media only screen and (max-width: 390px) {
+    header ul {
+        width: 100%;
+
+    }
+
+
+    header ul.flex {
+        flex-direction: column;
+    }
+
+
+    header ul li a {
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    header h1 {
+        width: 54px;
+        height: 30px;
+    }
+
+    header {
+        height: 50px;
+        overflow: hidden;
+        padding: 20px;
+        background-color: #d4d4d4;
+    }
+
+    .h1burgerbar {
+        width: 100%;
+    }
+
+    .fa-bars-icon {
+        font-size: 20px;
+        color: #000000;
+    }
+
+    header #nav {
+        margin-top: 50px;
+    }
+
+    .burgerbar {
+        display: block;
+    }
+
+    header.flex {
+        flex-direction: column;
+    }
+}
